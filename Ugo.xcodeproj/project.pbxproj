@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1358FCE12DE0466BDF105D27 /* Pods_Ugo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3932BD189E61BAF55B99DC /* Pods_Ugo.framework */; };
+		56765849231BDE0800D0278E /* switch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 56765847231BDE0800D0278E /* switch_off.png */; };
+		5676584A231BDE0800D0278E /* switch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 56765848231BDE0800D0278E /* switch_on.png */; };
+		5676584C231C089D00D0278E /* logo-square.png in Resources */ = {isa = PBXBuildFile; fileRef = 5676584B231C089D00D0278E /* logo-square.png */; };
+		5676584E231C08A400D0278E /* logo-long.png in Resources */ = {isa = PBXBuildFile; fileRef = 5676584D231C08A400D0278E /* logo-long.png */; };
+		56906DF1231A5692000181BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56906DF0231A5692000181BB /* AppDelegate.swift */; };
+		56906DF3231A5692000181BB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56906DF2231A5692000181BB /* FirstViewController.swift */; };
+		56906DF5231A5692000181BB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56906DF4231A5692000181BB /* SecondViewController.swift */; };
+		56906DF8231A5692000181BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56906DF6231A5692000181BB /* Main.storyboard */; };
+		56906DFA231A5693000181BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56906DF9231A5693000181BB /* Assets.xcassets */; };
+		56906DFD231A5693000181BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56906DFB231A5693000181BB /* LaunchScreen.storyboard */; };
+		56906E08231A5693000181BB /* UgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56906E07231A5693000181BB /* UgoTests.swift */; };
+		56906E13231A5693000181BB /* UgoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56906E12231A5693000181BB /* UgoUITests.swift */; };
+		56906E21231A576E000181BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56906E20231A576E000181BB /* GoogleService-Info.plist */; };
+		56906E23231B8B7B000181BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56906E22231B8B7B000181BB /* CoreLocation.framework */; };
+		A2560502D9081F764692179C /* Pods_UgoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3545CF7B849D7B7191D47C /* Pods_UgoTests.framework */; };
+		E84E98329B6890EE18329528 /* Pods_UgoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138DFAC6D5E5E53FA69AADB2 /* Pods_UgoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56906E04231A5693000181BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56906DE5231A5692000181BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56906DEC231A5692000181BB;
+			remoteInfo = Ugo;
+		};
+		56906E0F231A5693000181BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56906DE5231A5692000181BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56906DEC231A5692000181BB;
+			remoteInfo = Ugo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		138DFAC6D5E5E53FA69AADB2 /* Pods_UgoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UgoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA54A296721E5B1E5F494D6 /* Pods-Ugo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ugo.release.xcconfig"; path = "Target Support Files/Pods-Ugo/Pods-Ugo.release.xcconfig"; sourceTree = "<group>"; };
+		56765844231BB16500D0278E /* Ugo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ugo.entitlements; sourceTree = "<group>"; };
+		56765847231BDE0800D0278E /* switch_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_off.png; sourceTree = SOURCE_ROOT; };
+		56765848231BDE0800D0278E /* switch_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_on.png; sourceTree = SOURCE_ROOT; };
+		5676584B231C089D00D0278E /* logo-square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-square.png"; sourceTree = SOURCE_ROOT; };
+		5676584D231C08A400D0278E /* logo-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-long.png"; sourceTree = SOURCE_ROOT; };
+		56906DED231A5692000181BB /* Ugo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ugo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56906DF0231A5692000181BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56906DF2231A5692000181BB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		56906DF4231A5692000181BB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		56906DF7231A5692000181BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56906DF9231A5693000181BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56906DFC231A5693000181BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56906DFE231A5693000181BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56906E03231A5693000181BB /* UgoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UgoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56906E07231A5693000181BB /* UgoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UgoTests.swift; sourceTree = "<group>"; };
+		56906E09231A5693000181BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56906E0E231A5693000181BB /* UgoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UgoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56906E12231A5693000181BB /* UgoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UgoUITests.swift; sourceTree = "<group>"; };
+		56906E14231A5693000181BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56906E20231A576E000181BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56906E22231B8B7B000181BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		585A2FCD90DA40AD5B063FEE /* Pods-UgoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UgoTests.release.xcconfig"; path = "Target Support Files/Pods-UgoTests/Pods-UgoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C3545CF7B849D7B7191D47C /* Pods_UgoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UgoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3932BD189E61BAF55B99DC /* Pods_Ugo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ugo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F396E02700CB77348878EF /* Pods-UgoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UgoTests.debug.xcconfig"; path = "Target Support Files/Pods-UgoTests/Pods-UgoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD229D00C97024FFB9DFA21C /* Pods-UgoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UgoUITests.release.xcconfig"; path = "Target Support Files/Pods-UgoUITests/Pods-UgoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7715C5A8F611FB7162D5C23 /* Pods-UgoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UgoUITests.debug.xcconfig"; path = "Target Support Files/Pods-UgoUITests/Pods-UgoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD4EBA7130228C5CBEB72E3 /* Pods-Ugo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ugo.debug.xcconfig"; path = "Target Support Files/Pods-Ugo/Pods-Ugo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56906DEA231A5692000181BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56906E23231B8B7B000181BB /* CoreLocation.framework in Frameworks */,
+				1358FCE12DE0466BDF105D27 /* Pods_Ugo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56906E00231A5693000181BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2560502D9081F764692179C /* Pods_UgoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56906E0B231A5693000181BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84E98329B6890EE18329528 /* Pods_UgoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E90D9E0184D4705A8DB3BE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDD4EBA7130228C5CBEB72E3 /* Pods-Ugo.debug.xcconfig */,
+				3BA54A296721E5B1E5F494D6 /* Pods-Ugo.release.xcconfig */,
+				85F396E02700CB77348878EF /* Pods-UgoTests.debug.xcconfig */,
+				585A2FCD90DA40AD5B063FEE /* Pods-UgoTests.release.xcconfig */,
+				E7715C5A8F611FB7162D5C23 /* Pods-UgoUITests.debug.xcconfig */,
+				CD229D00C97024FFB9DFA21C /* Pods-UgoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56906DE4231A5692000181BB = {
+			isa = PBXGroup;
+			children = (
+				56906DEF231A5692000181BB /* Ugo */,
+				56906E06231A5693000181BB /* UgoTests */,
+				56906E11231A5693000181BB /* UgoUITests */,
+				56906DEE231A5692000181BB /* Products */,
+				1E90D9E0184D4705A8DB3BE6 /* Pods */,
+				E4532F7AD474397306927CB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56906DEE231A5692000181BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56906DED231A5692000181BB /* Ugo.app */,
+				56906E03231A5693000181BB /* UgoTests.xctest */,
+				56906E0E231A5693000181BB /* UgoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56906DEF231A5692000181BB /* Ugo */ = {
+			isa = PBXGroup;
+			children = (
+				5676584D231C08A400D0278E /* logo-long.png */,
+				5676584B231C089D00D0278E /* logo-square.png */,
+				56765844231BB16500D0278E /* Ugo.entitlements */,
+				56906DF0231A5692000181BB /* AppDelegate.swift */,
+				56906DF2231A5692000181BB /* FirstViewController.swift */,
+				56906DF4231A5692000181BB /* SecondViewController.swift */,
+				56906DF6231A5692000181BB /* Main.storyboard */,
+				56906DF9231A5693000181BB /* Assets.xcassets */,
+				56906DFB231A5693000181BB /* LaunchScreen.storyboard */,
+				56906DFE231A5693000181BB /* Info.plist */,
+				56906E20231A576E000181BB /* GoogleService-Info.plist */,
+				56765847231BDE0800D0278E /* switch_off.png */,
+				56765848231BDE0800D0278E /* switch_on.png */,
+			);
+			path = Ugo;
+			sourceTree = "<group>";
+		};
+		56906E06231A5693000181BB /* UgoTests */ = {
+			isa = PBXGroup;
+			children = (
+				56906E07231A5693000181BB /* UgoTests.swift */,
+				56906E09231A5693000181BB /* Info.plist */,
+			);
+			path = UgoTests;
+			sourceTree = "<group>";
+		};
+		56906E11231A5693000181BB /* UgoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56906E12231A5693000181BB /* UgoUITests.swift */,
+				56906E14231A5693000181BB /* Info.plist */,
+			);
+			path = UgoUITests;
+			sourceTree = "<group>";
+		};
+		E4532F7AD474397306927CB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56906E22231B8B7B000181BB /* CoreLocation.framework */,
+				6B3932BD189E61BAF55B99DC /* Pods_Ugo.framework */,
+				5C3545CF7B849D7B7191D47C /* Pods_UgoTests.framework */,
+				138DFAC6D5E5E53FA69AADB2 /* Pods_UgoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56906DEC231A5692000181BB /* Ugo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56906E17231A5693000181BB /* Build configuration list for PBXNativeTarget "Ugo" */;
+			buildPhases = (
+				D596E9BE80ED914AAD55F55B /* [CP] Check Pods Manifest.lock */,
+				56906DE9231A5692000181BB /* Sources */,
+				56906DEA231A5692000181BB /* Frameworks */,
+				56906DEB231A5692000181BB /* Resources */,
+				C996C643CB58248BDD863788 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ugo;
+			productName = Ugo;
+			productReference = 56906DED231A5692000181BB /* Ugo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56906E02231A5693000181BB /* UgoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56906E1A231A5693000181BB /* Build configuration list for PBXNativeTarget "UgoTests" */;
+			buildPhases = (
+				EF232CE1E4F87F98674B155E /* [CP] Check Pods Manifest.lock */,
+				56906DFF231A5693000181BB /* Sources */,
+				56906E00231A5693000181BB /* Frameworks */,
+				56906E01231A5693000181BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56906E05231A5693000181BB /* PBXTargetDependency */,
+			);
+			name = UgoTests;
+			productName = UgoTests;
+			productReference = 56906E03231A5693000181BB /* UgoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56906E0D231A5693000181BB /* UgoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56906E1D231A5693000181BB /* Build configuration list for PBXNativeTarget "UgoUITests" */;
+			buildPhases = (
+				EABE9D6589E968F9EA90CC53 /* [CP] Check Pods Manifest.lock */,
+				56906E0A231A5693000181BB /* Sources */,
+				56906E0B231A5693000181BB /* Frameworks */,
+				56906E0C231A5693000181BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56906E10231A5693000181BB /* PBXTargetDependency */,
+			);
+			name = UgoUITests;
+			productName = UgoUITests;
+			productReference = 56906E0E231A5693000181BB /* UgoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56906DE5231A5692000181BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = KoheiOgawa;
+				TargetAttributes = {
+					56906DEC231A5692000181BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					56906E02231A5693000181BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 56906DEC231A5692000181BB;
+					};
+					56906E0D231A5693000181BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 56906DEC231A5692000181BB;
+					};
+				};
+			};
+			buildConfigurationList = 56906DE8231A5692000181BB /* Build configuration list for PBXProject "Ugo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56906DE4231A5692000181BB;
+			productRefGroup = 56906DEE231A5692000181BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56906DEC231A5692000181BB /* Ugo */,
+				56906E02231A5693000181BB /* UgoTests */,
+				56906E0D231A5693000181BB /* UgoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56906DEB231A5692000181BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5676584A231BDE0800D0278E /* switch_on.png in Resources */,
+				56906DFD231A5693000181BB /* LaunchScreen.storyboard in Resources */,
+				56906E21231A576E000181BB /* GoogleService-Info.plist in Resources */,
+				5676584C231C089D00D0278E /* logo-square.png in Resources */,
+				56906DFA231A5693000181BB /* Assets.xcassets in Resources */,
+				56906DF8231A5692000181BB /* Main.storyboard in Resources */,
+				5676584E231C08A400D0278E /* logo-long.png in Resources */,
+				56765849231BDE0800D0278E /* switch_off.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56906E01231A5693000181BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56906E0C231A5693000181BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C996C643CB58248BDD863788 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ugo/Pods-Ugo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ugo/Pods-Ugo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ugo/Pods-Ugo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D596E9BE80ED914AAD55F55B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ugo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EABE9D6589E968F9EA90CC53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UgoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF232CE1E4F87F98674B155E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UgoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56906DE9231A5692000181BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56906DF5231A5692000181BB /* SecondViewController.swift in Sources */,
+				56906DF1231A5692000181BB /* AppDelegate.swift in Sources */,
+				56906DF3231A5692000181BB /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56906DFF231A5693000181BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56906E08231A5693000181BB /* UgoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56906E0A231A5693000181BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56906E13231A5693000181BB /* UgoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56906E05231A5693000181BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56906DEC231A5692000181BB /* Ugo */;
+			targetProxy = 56906E04231A5693000181BB /* PBXContainerItemProxy */;
+		};
+		56906E10231A5693000181BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56906DEC231A5692000181BB /* Ugo */;
+			targetProxy = 56906E0F231A5693000181BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56906DF6231A5692000181BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56906DF7231A5692000181BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56906DFB231A5693000181BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56906DFC231A5693000181BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56906E15231A5693000181BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56906E16231A5693000181BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56906E18231A5693000181BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDD4EBA7130228C5CBEB72E3 /* Pods-Ugo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ugo/Ugo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39Z2VV3P7T;
+				INFOPLIST_FILE = Ugo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shisyu-gaku.Ugo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56906E19231A5693000181BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA54A296721E5B1E5F494D6 /* Pods-Ugo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ugo/Ugo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39Z2VV3P7T;
+				INFOPLIST_FILE = Ugo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shisyu-gaku.Ugo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56906E1B231A5693000181BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F396E02700CB77348878EF /* Pods-UgoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39Z2VV3P7T;
+				INFOPLIST_FILE = UgoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shisyu-gaku.UgoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ugo.app/Ugo";
+			};
+			name = Debug;
+		};
+		56906E1C231A5693000181BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585A2FCD90DA40AD5B063FEE /* Pods-UgoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39Z2VV3P7T;
+				INFOPLIST_FILE = UgoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shisyu-gaku.UgoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ugo.app/Ugo";
+			};
+			name = Release;
+		};
+		56906E1E231A5693000181BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7715C5A8F611FB7162D5C23 /* Pods-UgoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39Z2VV3P7T;
+				INFOPLIST_FILE = UgoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shisyu-gaku.UgoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ugo;
+			};
+			name = Debug;
+		};
+		56906E1F231A5693000181BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD229D00C97024FFB9DFA21C /* Pods-UgoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39Z2VV3P7T;
+				INFOPLIST_FILE = UgoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shisyu-gaku.UgoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ugo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56906DE8231A5692000181BB /* Build configuration list for PBXProject "Ugo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56906E15231A5693000181BB /* Debug */,
+				56906E16231A5693000181BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56906E17231A5693000181BB /* Build configuration list for PBXNativeTarget "Ugo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56906E18231A5693000181BB /* Debug */,
+				56906E19231A5693000181BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56906E1A231A5693000181BB /* Build configuration list for PBXNativeTarget "UgoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56906E1B231A5693000181BB /* Debug */,
+				56906E1C231A5693000181BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56906E1D231A5693000181BB /* Build configuration list for PBXNativeTarget "UgoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56906E1E231A5693000181BB /* Debug */,
+				56906E1F231A5693000181BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56906DE5231A5692000181BB /* Project object */;
+}
