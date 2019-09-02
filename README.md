@@ -20,3 +20,6 @@ Ugo
 ## 制作者
 - ソフトウェア担当：[hogaku](https://github.com/hogaku)
 - ハードウェア担当：[mihhus](https://github.com/mihhus)
+
+## システム処理フロー
+![Images Not Found](https://github.com/hogaku/Ugo/blob/master/systemProcessFlow.png)
