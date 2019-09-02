@@ -36,9 +36,13 @@ class FirstViewController: UIViewController {
             print("文字列型の0と1以外の値がにデータベースに入っています")
         }
         
-        let isCloseValue = ["isClose":nextStatus]
-        rootRef.child("device/smartphone").setValue(isCloseValue)
-        
+        let formatter = DateFormatter()
+        formatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "dkHms", options: 0, locale: Locale.current)?.replacingOccurrences(of: ", ", with: ":")
+
+        let timestampValue = formatter.string(from: Date())
+        print(timestampValue)
+        let writeValue = ["isClose":nextStatus,"timestamp":timestampValue]
+        rootRef.child("device/smartphone").setValue(writeValue)
     }
     @IBOutlet weak var switchButton: UIButton!
     @IBOutlet weak var cartenControllerButton: UIButton!
