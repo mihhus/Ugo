@@ -18,6 +18,5 @@ Ugo
 また、天気予報情報から予測し、カーテンを閉めることができたり、雨センサーから直接雨情報を検出し、カーテンを閉め、大切な衣服を守ることができる。
 
 ## 制作者
-・ソフトウェア担当：[hogaku](https://github.com/hogaku)
-
-・ハードウェア担当：[mihhus](https://github.com/mihhus)
+- ソフトウェア担当：[hogaku](https://github.com/hogaku)
+- ハードウェア担当：[mihhus](https://github.com/mihhus)
