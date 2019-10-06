@@ -1,11 +1,15 @@
-//Firebaseの設定
 var firebase = require('firebase');
 var request = require('request');
 var fs = require('fs');
+var logger = log4js.getLogger();
+logger.level = 'all';
+'use strict';
 
 
+//Firebaseの設定
 // Your web app's Firebase configuration
-var firebaseConfig = {
+// 後で実機に埋め込む
+const firebaseConfig = {
     apiKey: "AIzaSyAdOHAsXiiFqIz-uGE7X7AMOJx56Wtm-Sw",
     authDomain: "prj-ugo.firebaseapp.com",
     databaseURL: "https://prj-ugo.firebaseio.com",
@@ -46,9 +50,83 @@ fs.watch("/sys/class/gpio/gpio17/value", {persistent:true, recursive:false}, (ev
 });
 */
 
+class send_to_firebase_from_googlehome
+{
+    // class body
+    constructor(dataString) {
+        // this.
+        this.GOOGLE_HOME_REF = firebase.database().ref('/device/googlehome');
+        this.OPEN_ORDER = /あけ.*て|上げ.*て|開け.*て/;
+        this.CLOSE_ORDER = /閉め.*て|落とし.*て|下ろし.*て/;
+    }
+    send() {
+    }
+}
+
+class GetApiServer
+{
+    constructor() {
+    }
+    put_request(ref, option, callback) {
+        request.put(option, callback(error, response, body));
+    }
+    post_request(ref, option, callback) {
+        request.post(option, callback(error, response, body));
+    }
+}
+class GetWeather
+{
+    constructor() {
+        this.get_api_server = GetApiServer();
+        this.geolocate_api_key = "AIzaSyDp7MvATiANb7H9D1le2-isXu5ihY2kDlo";
+        this.geolocate_option = {
+            url: `https://www.googleapis.com/geolocation/v1/geolocate?key=${this.geolocate_api_key}`,
+            headers: { "Content-type": "application/json"},
+            method: 'POST',
+            json: true
+        };
+        this.weather_api_key = "656c9f2e36bab5eb95a0bea3dd5ae4ab";
+        this.weather_option = {
+            url : `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${openweathermap_api_key}`
+        }
+        this.firebase_option = {
+            url: 'https://prj-ugo.firebaseio.com/device/weatherAPI.json',
+            method: 'PUT',
+            body: dataString
+        };
+    }
+    geolocate_request(error, response, body) {
+        var lat = body.location.lat;
+        var lng = body.location.lng;
+        this.get_api_server.put_request(null, this.weather_option, weather_request);
+    }
+    weather_request(error, response, body) {
+        var obj = JSON.parse(body);
+        var isClose;
+        switch(obj.weather[0].description){
+            case "clear sky":
+            case "few clouds":
+            case "scattered clouds":
+            case "broken clouds":
+            case "mist":
+            case "Smoke":
+            case "Haze":
+            case "fog":
+                isClose = 0;
+                break;
+            default :
+                isClose = 1;
+        }
+        var dataString = `{"main": "${obj.weather[0].main}", "description": "${obj.weather[0].description}", "icon": "${obj.weather[0].icon}", "id": "${obj.weather[0].id}", "isClose": "${isClose}"}`;
+        this.get_api_server.put_request(null, this.firebase_option, null);
+    }
+    request() {
+        this.get_api_server.put_request(null, this.geolocate_api_option, geolocate_request);
+    }
+}
+
 //GoogleHome→ Firebaseに関する記述
 var googlehomeref = firebase.database().ref('/device/googlehome');
-
 googlehomeref.on('value', function(snapshot){
     var key = snapshot.key;
     var command = snapshot.val();
@@ -77,7 +155,6 @@ googlehomeref.on('value', function(snapshot){
     }
 
 });
-
 
 
 //各フラグを処理するステートマシン
