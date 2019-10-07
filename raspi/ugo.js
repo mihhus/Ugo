@@ -1,15 +1,27 @@
 var firebase = require('firebase');
 var request = require('request');
+var rp = require('request-promise');
 var fs = require('fs');
 var logger = log4js.getLogger();
 logger.level = 'all';
 'use strict';
 
+// ログ出力
+var systemLogger = Log4js.getLogger('system');
+var accessLogger = Log4js.getLogger('access');
+var errorLogger = Log4js.getLogger('error');
+
+
+// catchされない例外を取り敢えず処理する
+process.on('uncaughtException', function(err){
+    errorLogger.info(err)
+});
+
 
 //Firebaseの設定
 // Your web app's Firebase configuration
 // 後で実機に埋め込む
-const firebaseConfig = {
+var firebaseConfig = {
     apiKey: "AIzaSyAdOHAsXiiFqIz-uGE7X7AMOJx56Wtm-Sw",
     authDomain: "prj-ugo.firebaseapp.com",
     databaseURL: "https://prj-ugo.firebaseio.com",
@@ -49,7 +61,6 @@ fs.watch("/sys/class/gpio/gpio17/value", {persistent:true, recursive:false}, (ev
     }
 });
 */
-
 class send_to_firebase_from_googlehome
 {
     // class body
@@ -67,13 +78,26 @@ class GetApiServer
 {
     constructor() {
     }
-    put_request(ref, option, callback) {
-        request.put(option, callback(error, response, body));
+    put_request(option, callback) {
+        try {
+            request.put(option, callback(error, response, body));
+        } catch(e) {
+            errorLogger.info(e);
+            return e;
+        }
+        return 1;
     }
-    post_request(ref, option, callback) {
-        request.post(option, callback(error, response, body));
+    post_request(option, callback) {
+        try {
+            request.post(option, callback(error, response, body));
+        } catch(e) {
+            errorLogger.info(e);
+            return e;
+        }
+        return 1;
     }
 }
+
 class GetWeather
 {
     constructor() {
@@ -95,13 +119,21 @@ class GetWeather
             body: dataString
         };
     }
-    geolocate_request(error, response, body) {
-        var lat = body.location.lat;
-        var lng = body.location.lng;
-        this.get_api_server.put_request(null, this.weather_option, weather_request);
+    request() {
+        rp(this.geolocate_api_option)
+            .then(weather_request(body))
+            .catch(function (err) {
+                errorLogger.info(e);
+            });
     }
-    weather_request(error, response, body) {
-        var obj = JSON.parse(body);
+    weather_request(body) {
+        var obj
+        try {
+            obj = JSON.parse(body);
+        }catch(e) {
+            errorLogger.info(e);
+            return e;
+        }
         var isClose;
         switch(obj.weather[0].description){
             case "clear sky":
@@ -118,10 +150,15 @@ class GetWeather
                 isClose = 1;
         }
         var dataString = `{"main": "${obj.weather[0].main}", "description": "${obj.weather[0].description}", "icon": "${obj.weather[0].icon}", "id": "${obj.weather[0].id}", "isClose": "${isClose}"}`;
-        this.get_api_server.put_request(null, this.firebase_option, null);
-    }
-    request() {
-        this.get_api_server.put_request(null, this.geolocate_api_option, geolocate_request);
+        this.get_api_server.put_request(this.firebase_option, null);
+        rp(this.firebase_option)
+            .then(function(body){
+            });
+            return 1;
+            .catch(function(err){
+                errorLogger.info(err);
+                return err;
+            });
     }
 }
 
